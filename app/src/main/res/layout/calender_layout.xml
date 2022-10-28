@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_custom_calender"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_dark">
+
+        <ImageButton
+            android:layout_margin="10dp"
+            android:id="@+id/previousBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+        <TextView
+            android:id="@+id/current_Date_Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="CurrentData"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_margin="10dp"
+            android:id="@+id/nextBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_east_24"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/system_accent2_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:targetApi="s">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="日"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="月"
+            android:background="@android:color/system_accent2_10"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="火"
+            android:background="@android:color/system_accent2_10"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="水"
+            android:background="@android:color/system_accent2_10"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="木"
+            android:background="@android:color/system_accent2_10"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="金"
+            android:background="@android:color/system_accent2_10"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="土"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginTop="4dp"/>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:numColumns="7"
+        android:id="@+id/gridViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
